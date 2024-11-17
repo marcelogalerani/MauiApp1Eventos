@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1Eventos.Views.EventoDefinido"
+             Title="EventoDefinido"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout Margin="10"
+                         Spacing="10">
+        <Label 
+            Text="Evento Definido!"
+            FontSize="Title"
+            Margin="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label x:Name="txt_EventoDef"
+               FontSize="20"/>
+        <Label x:Name="txt_LocalDef"
+                FontSize="20"/>
+        <Label x:Name="txt_ParticipantesDef"
+                FontSize="20"/>
+        <Label x:Name="txt_ValorDef"
+                FontSize="20"/>
+        <Label x:Name="txt_InicioDef"
+                FontSize="20"/>
+        <Label x:Name="txt_TerminoDef"
+                FontSize="20"/>
+        <Label Text="{Binding Numero, StringFormat='numero {0}'}" />
+        <Label Text="{Binding Valor, StringFormat='valor {0:C}'}" />
+        <Label Text="{Binding Inicio, StringFormat='Data Inicio {0:dd/MM/yyyy}'}" />
+        <Label Text="{Binding Termino, StringFormat='Data Término {0:dd/MM/yyyy}'}" />
+
+        <Label Text="Diferença" x:Name="difedata"/>
+        <Label x:Name="lbl_final"/>
+
+
+
+
+    </VerticalStackLayout>
+    
+</ContentPage>
