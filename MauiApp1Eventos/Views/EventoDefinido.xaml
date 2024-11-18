@@ -8,33 +8,29 @@
                          Spacing="10">
         <Label 
             Text="Evento Definido!"
+            TextColor="Blue"
             FontSize="Title"
             Margin="20"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Label x:Name="txt_EventoDef"
-               FontSize="20"/>
-        <Label x:Name="txt_LocalDef"
-                FontSize="20"/>
-        <Label x:Name="txt_ParticipantesDef"
-                FontSize="20"/>
-        <Label x:Name="txt_ValorDef"
-                FontSize="20"/>
-        <Label x:Name="txt_InicioDef"
-                FontSize="20"/>
-        <Label x:Name="txt_TerminoDef"
-                FontSize="20"/>
-        <Label Text="{Binding Numero, StringFormat='numero {0}'}" />
-        <Label Text="{Binding Valor, StringFormat='valor {0:C}'}" />
-        <Label Text="{Binding Inicio, StringFormat='Data Inicio {0:dd/MM/yyyy}'}" />
-        <Label Text="{Binding Termino, StringFormat='Data Término {0:dd/MM/yyyy}'}" />
-
-        <Label Text="Diferença" x:Name="difedata"/>
-        <Label x:Name="lbl_final"/>
-
-
-
-
+        
+        <Label Text="Resumo do Evento:" FontSize="Large"/>
+        
+        <Label Text="* Evento: "  x:Name="txt_EventoDef"/>
+        <Label Text="* Local: " x:Name="txt_LocalDef"/>
+                
+        <Label Text="{Binding Numero, StringFormat='Número de participantes: {0}'}" />
+        <Label Text="{Binding Valor, StringFormat='Valor por participante: {0:C}'}" />
+        <Label Text="{Binding Inicio, StringFormat='Data Início: {0:dd/MM/yyyy}'}" />
+        <Label Text="{Binding Termino, StringFormat='Data Término: {0:dd/MM/yyyy}'}" />
+        
+        <Frame>
+            <Label x:Name="lbl_final"/>
+        </Frame>
+        <Frame>
+            <Label Text="Diferença" x:Name="difedata"/>
+        </Frame>
+         
     </VerticalStackLayout>
     
 </ContentPage>

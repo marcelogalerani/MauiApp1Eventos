@@ -34,7 +34,7 @@
                 <Entry Grid.Row="2" Grid.Column="1"
                        Placeholder="total participantes" x:Name="txt_participantes"/>
                     
-                <Label Grid.Row="3" Grid.Column="0" Text="Custo por participantes"/>
+                <Label Grid.Row="3" Grid.Column="0" Text="Custo por participante"/>
 
                 <Entry Grid.Row="3" Grid.Column="1"
                        Placeholder="Valor por participante" x:Name="txt_valor"/>
@@ -50,7 +50,6 @@
                             Format="dd/MM/yyyy" />
 
                 </Grid>
-
                 
             </VerticalStackLayout>       
     </Frame>
